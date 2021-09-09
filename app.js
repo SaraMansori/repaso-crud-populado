@@ -10,8 +10,11 @@ require("./config")(app);
 
 app.locals.title = `Coasters App!`;
 
+require("./config/session.config")(app),
+
 require("./routes")(app);
 
 require("./error-handling")(app);
+
 
 module.exports = app;
